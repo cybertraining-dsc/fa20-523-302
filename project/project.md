@@ -27,7 +27,10 @@ Wearables have been on the market for years now, gradually improving and providi
 
 Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.  This paper examines the roadblocks in making this information available to healthcare professionals and examines what wearable information is currently being used in healthcare.
 
+Existing research focuses on a wide variety of inputs [^2][^1].  Sensors including electrodes, chemical probes, microphones, optical detectors, and blood glucose sensors are referenced as devices used for gathering healthcare information.  This research will focus on data that can be gathered with a modern smartphone or smartwatch.  Most of the sensors described are not as ubiquitous as consumer items like FitBits or Apple Watches.  
 
+Previous studies have indicated the significance of precision health and the need for patient-specific data from wearables to be integrated into a patient's care strategy [^4].  Wearable data outlining a patient's sleep, motion habits, heart rate, and other metrics can be invaluable in diagnosing or predicting conditions.  Increased sedentary activity could indicate depression, and could predict future heart problems.  A patient's health could be graphed and historical trends could be useful to determine potential causes for a diagnosis.  
+It is often asserted that a person's environmental factors are better predictors for their health than their genetic makeup [^4].  Linking behavioral and social determinants with biomedical data would allow professionals to better target certain conditions. 
 
 ## 3. Choice of Data-sets
 
@@ -36,7 +39,7 @@ The dataset used for this project contains labeled movement data from wearable d
 A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each gyroscopic sensor has several attributes describing its motion.  
 
 
-If successful, this will show that wearables have a high potential for providing relevant information beyond exercise and fall tracking.  
+If successful, this will establish that wearables have a high potential for providing relevant information beyond exercise metrics.  
 
 ## 4. Methodology
 
@@ -55,13 +58,14 @@ Reviewing relevant literature is important to determine the current state of wea
 
 ## 7. Acknowledgements 
 
-## Project Plan
 
 ## 8. References
 
 [^1]: Piwek L, Ellis DA, Andrews S, Joinson A. (2016, February 02).  I Retrieved November 11, 2020 from <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953>  
 [^2]: Yetisen, Ali K. (2018, August 16).  I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6541866/>  
-[^3]: 
+[^3]: Loncar-Turukalo, Tatjana, Literature on Wearable Technology for Connected Health: Scoping Review of Research Trends, Advances, and Barriers (2019, September 21). I Retrieved November 02, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6818529/>
+[^4]: Glasgow, Russell E. Realizing the full potential of precision health: The need to include patient-reported health behavior, mental health, social determinants, and patient preferences data (2018, September 13). I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/>
+
 
 
 
