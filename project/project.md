@@ -30,6 +30,7 @@ Previous work exists on the use of sensors and wearables in assisted living envi
 
 
 ## 3. Choice of Data-sets
+
 The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.  
 
 A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each gyroscopic sensor has several attributes describing its motion.  
@@ -38,6 +39,7 @@ A dataset gathered from 24 individuals with Apple devices measuring attitude, gr
 If successful, this will show that wearables have a high potential for providing relevant information beyond exercise and fall tracking.  
 
 ## 4. Methodology
+
 The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (k-means, random forest, linear regression).
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's medical history.
