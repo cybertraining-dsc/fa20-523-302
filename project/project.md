@@ -16,7 +16,7 @@ Contents
 
 {{% /pageinfo %}}
 
-**Keywords:** ANOVA, Comparative Analysis, Exploratory Analysis, Football, Sports, Metrics
+**Keywords:** Wearables, Classification, Descriptive Analysis, Healthcare, Movement Tracking, Precision Health
 
 ## 1. Introduction
 
@@ -25,10 +25,16 @@ Wearables have been on the market for years now, gradually improving and providi
 
 ## 2. Background Research and Previous Work
 
+Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.  This paper examines the roadblocks in making this information available to healthcare professionals and examines what wearable information is currently being used in healthcare.
+
+
+
 ## 3. Choice of Data-sets
 The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.  
 
-This data is obtained from a Chinese study tracking falls among elderly people [^2].  It contains information regarding the state of the user (standing, walking, lying down, falling), and the user's trajectory.  This data will be used to determine a given user's current state through classification methods.  
+A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each gyroscopic sensor has several attributes describing its motion.  
+
+
 If successful, this will show that wearables have a high potential for providing relevant information beyond exercise and fall tracking.  
 
 ## 4. Methodology
@@ -36,7 +42,7 @@ The analysis of relevant wearable data is undertaken to determine the accuracy o
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's medical history.
 
-Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.  Much of this research will be focused on 
+Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.  Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.  
  
 
 ## 5. Inference
@@ -51,9 +57,9 @@ Reviewing relevant literature is important to determine the current state of wea
 
 ## 8. References
 
-[^1]: Zita, C. (2020, September 16). I Retrieved November 02, 2020, from <https://towardsdatascience.com/improving-a-famous-nfl-prediction-model-1295a7022859>
-[^2]: Özdemir, Ahmet Turan, and Billur Barshan. “Detecting Falls with Wearable Sensors Using Machine Learning Techniques.” Sensors (Basel, Switzerland) 14.6 (2014): 10691–10708. PMC. Web. 23 Apr. 2017.
-
+[^1]: Piwek L, Ellis DA, Andrews S, Joinson A. (2016, February 02).  I Retrieved November 11, 2020 from <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953>  
+[^2]: Yetisen, Ali K. (2018, August 16).  I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6541866/>  
+[^3]: 
 
 
 
