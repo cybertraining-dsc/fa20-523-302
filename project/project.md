@@ -42,17 +42,22 @@ If successful, this will establish that wearables have a high potential for prov
 
 ## 4. Methodology
 
-The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (k-means, random forest, linear regression).
+The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (K-nearest neighbors, random forest).
 
-First, the data has to be downloaded from the MotionSense source.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.  
+First, the data has to be downloaded from the MotionSense project GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.  
+
+A SciKit pipeline is set up for each classifier.  After obtaining a train/test split the pipeline applies a standard scaler to normalize the data, and then fits the classifier on the training data.  Each classifier is then scored using the testing dataset.
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's medical history.
 
 Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.  Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.  
  
 
-## 5. Inference
+## 5. Discussion
 
+The dataset is comprised of six discrete classes of movement.  Below 
+
+![Figure 1](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/dataframe.png)
 
 ## 6. Conclusion
 
