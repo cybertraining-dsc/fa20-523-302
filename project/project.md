@@ -84,8 +84,11 @@ Below is an example of the data's representation of a class of movement.  In thi
 ## 8. References
 
 [^1]: Piwek L, Ellis DA, Andrews S, Joinson A. (2016, February 02).  I Retrieved November 11, 2020 from <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953>  
+
 [^2]: Yetisen, Ali K. (2018, August 16).  I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6541866/>  
+
 [^3]: Loncar-Turukalo, Tatjana, Literature on Wearable Technology for Connected Health: Scoping Review of Research Trends, Advances, and Barriers (2019, September 21). I Retrieved November 02, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6818529/>
+
 [^4]: Glasgow, Russell E. Realizing the full potential of precision health: The need to include patient-reported health behavior, mental health, social determinants, and patient preferences data (2018, September 13). I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/>
 
 
