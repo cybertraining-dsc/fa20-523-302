@@ -38,12 +38,13 @@ The dataset used for this project contains labeled movement data from wearable d
 
 A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each gyroscopic sensor has several attributes describing its motion.  
 
-
 If successful, this will establish that wearables have a high potential for providing relevant information beyond exercise metrics.  
 
 ## 4. Methodology
 
 The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (k-means, random forest, linear regression).
+
+First, the data has to be downloaded from the MotionSense source.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.  
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's medical history.
 
