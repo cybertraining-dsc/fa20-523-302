@@ -55,9 +55,25 @@ Reviewing relevant literature is important to determine the current state of wea
 
 ## 5. Discussion
 
-The dataset is comprised of six discrete classes of movement.  Below 
+The dataset is comprised of six discrete classes of movement.  Below is a sample of the dataset.  
 
 ![Figure 1](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/dataframe.png)
+
+**Figure 1:** Pandas data frame snippet
+
+There is an imbalance in the number of datapoints for each class, which could lead to classification errors.
+
+![Figure 2](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/occurence.png)
+
+**Figure 2:** Data distribution per movement class.
+
+Below is an example of the data's representation of a class of movement.  In this instance it's that of a male jogging.
+
+![Figure 3](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_run.png)
+
+**Figure 2:** 10 second sensor readout of a jogging male.
+
+
 
 ## 6. Conclusion
 
