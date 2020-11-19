@@ -4,6 +4,8 @@
 [![Status](https://github.com/cybertraining-dsc/fa20-523-302/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-302/actions)
 Status: in progress
 
+- [ ] Figure 1 does not provide useful information to the report. Please remove and use menaingful description of the data.
+
 Adam Martin, [fa20-523-302](https://github.com/cybertraining-dsc/fa20-523-302), [Edit](https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md)
 
 
