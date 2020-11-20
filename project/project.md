@@ -8,7 +8,6 @@ Status: in progress
 
 Adam Martin, [fa20-523-302](https://github.com/cybertraining-dsc/fa20-523-302), [Edit](https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md)
 
-
 {{% pageinfo %}}
 
 ## Abstract
@@ -48,7 +47,7 @@ If successful, this will establish that wearables have a high potential for prov
 
 The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (K-nearest neighbors, random forest).
 
-First, the data has to be downloaded from the MotionSense project GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.  
+First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.  
 
 A SciKit pipeline is set up for each classifier.  After obtaining a train/test split the pipeline applies a standard scaler to normalize the data, and then fits the classifier on the training data.  Each classifier is then scored using the testing dataset.
 
@@ -59,11 +58,7 @@ Reviewing relevant literature is important to determine the current state of wea
 
 ## 5. Discussion
 
-The dataset is comprised of six discrete classes of movement.  Below is a sample of the dataset.  
-
-![Figure 1](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/dataframe.png)
-
-**Figure 1:** Pandas data frame snippet
+The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  The six movement classes are one-hot encoded.  
 
 There is an imbalance in the number of datapoints for each class, which could lead to classification errors.
 
@@ -76,6 +71,8 @@ Below is an example of the data's representation of a class of movement.  In thi
 ![Figure 3](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_run.png)
 
 **Figure 2:** 10 second sensor readout of a jogging male.
+
+
 
 
 
@@ -94,7 +91,4 @@ Below is an example of the data's representation of a class of movement.  In thi
 [^3]: Loncar-Turukalo, Tatjana, Literature on Wearable Technology for Connected Health: Scoping Review of Research Trends, Advances, and Barriers (2019, September 21). I Retrieved November 02, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6818529/>
 
 [^4]: Glasgow, Russell E. Realizing the full potential of precision health: The need to include patient-reported health behavior, mental health, social determinants, and patient preferences data (2018, September 13). I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/>
-
-
-
 
