@@ -18,7 +18,7 @@ Adam Martin, [fa20-523-302](https://github.com/cybertraining-dsc/fa20-523-302), 
 {{% pageinfo %}}
 
 ## Abstract
-
+todo
 
 Contents
 
@@ -84,10 +84,10 @@ Below is an example of the data's representation of a class of movement.  In thi
 
 
 ## 6. Conclusion
-
+todo
 
 ## 7. Acknowledgements 
-
+todo
 
 ## 8. References
 
