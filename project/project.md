@@ -11,8 +11,8 @@ Status: in progress
 - [ ] Why are not resting periods such as sleep, light sleep or napping included
 - [ ] Is it possible to distinguish between sitting and eating and sitting and working?
 - [ ] The analysis does not include a benchmark
+- [ ] Explain in more detail what you can do with the data after classification
 
-Explain in more detail what you can do with the data after classification
 Adam Martin, [fa20-523-302](https://github.com/cybertraining-dsc/fa20-523-302), [Edit](https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md)
 
 {{% pageinfo %}}
