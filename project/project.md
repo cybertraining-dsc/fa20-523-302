@@ -73,7 +73,7 @@ There is an imbalance in the number of datapoints for each class, which could le
 
 **Figure 2:** Data distribution per movement class.
 
-Below is an example of the data's representation of a class of movement.  In this instance it's that of a male jogging.
+Figure 3 is an example of the data's representation of a class of movement.  In this instance it's that of a male jogging.
 
 ![Figure 3](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_run.png)
 
