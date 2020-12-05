@@ -53,6 +53,7 @@ It is often asserted that a person's environmental factors are better predictors
 The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.
 
 A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion.
+This dataset does not contain sleep data, but considering 
 
 If successful, this will establish that wearables have a high potential for providing relevant information beyond exercise metrics.
 
@@ -68,9 +69,8 @@ The Keras Long Short Term Memory classifier implementation is used for this task
 class.  Each class is then subdivided into one-second 'windows', each with 50 entries.  Each window is offset by 10 entries from the previous window.  
 
 The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
-features, and the number of samples per window.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  
-
-
+features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a Google
+Colab instance and benchmarked.
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's medical history.
 
@@ -113,6 +113,8 @@ Figure 2 is an example of the data's representation of a class of movement.  In 
 ![Figure 7](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_stand.png)
 
 **Figure 7:** 10 second sensor readout of a female standing.
+
+Only roll, pitch, and yaw are shown for clarity and to illustrate the quality of the readings obtained by the sensors.  
 
 ![Figure 8](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/LSTM_benchmark.png)
 
