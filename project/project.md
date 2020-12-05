@@ -56,7 +56,9 @@ A dataset gathered from 24 individuals with Apple devices measuring attitude, gr
 
 If successful, this will establish that wearables have a high potential for providing relevant information beyond exercise metrics.
 
-## 4. Methodology
+## 4. Methodology and Code
+
+The IPython notebook used for this analysis is available on the [GitHub repository](https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/code/Wearables.ipynb).
 
 The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (K-nearest neighbors, random forest).
 
@@ -72,7 +74,7 @@ Reviewing relevant literature is important to determine the current state of wea
 
 ## 5. Discussion
 
-The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.
+The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  
 
 There is an imbalance in the number of datapoints for each class, which could lead to classification errors.
 
@@ -105,6 +107,8 @@ Figure 2 is an example of the data's representation of a class of movement.  In 
 ![Figure 7](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_stand.png)
 
 **Figure 7:** 10 second sensor readout of a female standing.
+
+
 
 
 
