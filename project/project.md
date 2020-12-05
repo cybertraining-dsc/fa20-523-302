@@ -60,11 +60,17 @@ If successful, this will establish that wearables have a high potential for prov
 
 The IPython notebook used for this analysis is available on the [GitHub repository](https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/code/Wearables.ipynb).
 
-The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (K-nearest neighbors, random forest).
+The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data.
 
 First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.
+During the data acquisition, the sensors are sampled at a 50hz rate.  Since the dataset is a timeseries, classification methods that take advantage of historical datapoints will be the most effective.
+The Keras Long Short Term Memory classifier implementation is used for this task.  The dataset is first split into its various classes of motion using the one-hot-encoded matrix to filter out each
+class.  Each class is then subdivided into one-second 'windows', each with 50 entries.  Each window is offset by 10 entries from the previous window.  
 
-A SciKit pipeline is set up for each classifier.  After obtaining a train/test split the pipeline applies a standard scaler to normalize the data, and then fits the classifier on the training data.  Each classifier is then scored using the testing dataset.
+The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
+features, and the number of samples per window.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  
+
+
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's medical history.
 
@@ -108,10 +114,9 @@ Figure 2 is an example of the data's representation of a class of movement.  In 
 
 **Figure 7:** 10 second sensor readout of a female standing.
 
+![Figure 8](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/LSTM_benchmark.png)
 
-
-
-
+**Figure 8:** Cloudmesh benchmark for LSTM train and test.
 
 ## 6. Conclusion
 todo
