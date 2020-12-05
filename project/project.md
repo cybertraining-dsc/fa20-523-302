@@ -4,14 +4,8 @@
 [![Status](https://github.com/cybertraining-dsc/fa20-523-302/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-302/actions)
 Status: in progress
 
-- [x] Figure 1 does not provide useful information to the report. Please remove and use menaingful description of the data.
-- [ ] Link to code
-- [ ] Please do not use "Below is an" and use numbered figure references instead as provided in the template.
-- [ ] Please provide for each type you classify an example so we can see the differences.
 - [ ] The analysis does not tell how accurate it is
-- [ ] Why are not resting periods such as sleep, light sleep or napping included
 - [ ] Is it possible to distinguish between sitting and eating and sitting and working?
-- [ ] The analysis does not include a benchmark
 - [ ] Explain in more detail what you can do with the data after classification
 
 Adam Martin, [fa20-523-302](https://github.com/cybertraining-dsc/fa20-523-302), [Edit](https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md)
@@ -120,11 +114,13 @@ Only roll, pitch, and yaw are shown for clarity and to illustrate the quality of
 
 **Figure 8:** Cloudmesh benchmark for LSTM train and test.
 
+The final accuracy measurement for the LSTM was **%95.42**.  This proves that discrete movement classes can be determined through the analysis of basic sensor data regarding device movement.   
+
 ## 6. Conclusion
-todo
+
 
 ## 7. Acknowledgements 
-todo
+I would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications.   
 
 ## 8. References
 
