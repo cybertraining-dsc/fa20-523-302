@@ -4,7 +4,8 @@
 [![Status](https://github.com/cybertraining-dsc/fa20-523-302/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-302/actions)
 Status: in progress
 
-- [ ] Figure 1 does not provide useful information to the report. Please remove and use menaingful description of the data.
+- [x] Figure 1 does not provide useful information to the report. Please remove and use menaingful description of the data.
+- [ ] Link to code
 - [ ] Please do not use "Below is an" and use numbered figure references instead as provided in the template.
 - [ ] Please provide for each type you classify an example so we can see the differences.
 - [ ] The analysis does not tell how accurate it is
@@ -35,18 +36,23 @@ Wearables have been on the market for years now, gradually improving and providi
 
 ## 2. Background Research and Previous Work
 
-Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.  This paper examines the roadblocks in making this information available to healthcare professionals and examines what wearable information is currently being used in healthcare.
+Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.  
+This paper examines the roadblocks in making this information available to healthcare professionals and examines what wearable information is currently being used in healthcare.
+
 
 Existing research focuses on a wide variety of inputs [^2][^1].  Sensors including electrodes, chemical probes, microphones, optical detectors, and blood glucose sensors are referenced as devices used for gathering healthcare information.  This research will focus on data that can be gathered with a modern smartphone or smartwatch.  Most of the sensors described are not as ubiquitous as consumer items like FitBits or Apple Watches.
+Furthermore, many users report diminished enthusiasm towards wearables due to complex sensors and pairing processes [^6].  Focusing on devices that are already successful in the consumer market
+ensures that the impact of this study will not be confined to specific users and use cases.
 
-Previous studies have indicated the significance of precision health and the need for patient-specific data from wearables to be integrated into a patient's care strategy [^4].  Wearable data outlining a patient's sleep, motion habits, heart rate, and other metrics can be invaluable in diagnosing or predicting conditions.  Increased sedentary activity could indicate depression, and could predict future heart problems.  A patient's health could be graphed and historical trends could be useful to determine potential causes for a diagnosis.
+Previous studies have indicated the significance of precision health and the need for patient-specific data from wearables to be integrated into a patient's care strategy [^4].  Wearable data outlining a patient's sleep, motion habits, heart rate, and other metrics can be invaluable in diagnosing or predicting conditions.  Increased sedentary activity could indicate depression, and could predict future heart problems.
+A patient's health could be graphed and historical trends could be useful in determining factors that contribute to the patient's condition.  
 It is often asserted that a person's environmental factors are better predictors for their health than their genetic makeup [^4].  Linking behavioral and social determinants with biomedical data would allow professionals to better target certain conditions. 
 
 ## 3. Choice of Data-sets
 
 The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.
 
-A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each gyroscopic sensor has several attributes describing its motion.
+A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion.
 
 If successful, this will establish that wearables have a high potential for providing relevant information beyond exercise metrics.
 
@@ -60,24 +66,47 @@ A SciKit pipeline is set up for each classifier.  After obtaining a train/test s
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's medical history.
 
-Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.  Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.
+Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.
+  Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.
  
 
 ## 5. Discussion
 
-The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  The six movement classes are one-hot encoded.
+The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.
 
 There is an imbalance in the number of datapoints for each class, which could lead to classification errors.
 
-![Figure 2](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/occurence.png)
+![Figure 1](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/occurence.png)
 
-**Figure 2:** Data distribution per movement class.
+**Figure 1:** Data distribution per movement class.
 
-Figure 3 is an example of the data's representation of a class of movement.  In this instance it's that of a male jogging.
+Figure 2 is an example of the data's representation of a class of movement.  In this instance it's that of a male jogging.
 
-![Figure 3](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_run.png)
+![Figure 2](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_run.png)
 
 **Figure 2:** 10 second sensor readout of a jogging male.
+
+![Figure 3](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_downstairs.png)
+
+**Figure 3:** 20 second sensor readout of a female going downstairs.
+
+![Figure 4](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_upstairs.png)
+
+**Figure 4:** 20 second sensor readout of a male going upstairs.
+
+![Figure 5](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_walk.png)
+
+**Figure 5:** 10 second sensor readout of a female walking.
+
+![Figure 6](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_sit.png)
+
+**Figure 6:** 10 second sensor readout of a male sitting.
+
+![Figure 7](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_stand.png)
+
+**Figure 7:** 10 second sensor readout of a female standing.
+
+
 
 
 ## 6. Conclusion
@@ -88,7 +117,7 @@ todo
 
 ## 8. References
 
-[^1]: Piwek L, Ellis DA, Andrews S, Joinson A. (2016, February 02).  I Retrieved November 11, 2020 from <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953>  
+[^1]: Piwek L, Ellis DA, Andrews S, Joinson A. (2016, February 02).  I Retrieved November 11, 2020 from <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953>
 
 [^2]: Yetisen, Ali K. (2018, August 16).  I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6541866/>
 
@@ -98,4 +127,5 @@ todo
 
 [^5]: Malekzadeh, Mohammad. Mobile Sensor Data Anonymization (2018).  I Retrieved September 18, 2020 from <http://doi.acm.org/10.1145/3302505.3310068>
 
+[^6]: Loncar-Turukalo, Tatjana.  Literature on Wearable Technology for Connected Health: Scoping Review of Research Trends, Advances, and Barriers (2019, September 21).  I Retrieved December 1st from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6818529/>
 
