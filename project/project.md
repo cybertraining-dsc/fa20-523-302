@@ -13,6 +13,7 @@ Adam Martin, [fa20-523-302](https://github.com/cybertraining-dsc/fa20-523-302), 
 {{% pageinfo %}}
 
 ## Abstract
+
 todo
 
 Contents
@@ -30,7 +31,7 @@ Wearables have been on the market for years now, gradually improving and providi
 
 ## 2. Background Research and Previous Work
 
-Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.  
+Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.
 This paper examines the roadblocks in making this information available to healthcare professionals and examines what wearable information is currently being used in healthcare.
 
 
@@ -39,7 +40,7 @@ Furthermore, many users report diminished enthusiasm towards wearables due to co
 ensures that the impact of this study will not be confined to specific users and use cases.
 
 Previous studies have indicated the significance of precision health and the need for patient-specific data from wearables to be integrated into a patient's care strategy [^4].  Wearable data outlining a patient's sleep, motion habits, heart rate, and other metrics can be invaluable in diagnosing or predicting conditions.  Increased sedentary activity could indicate depression, and could predict future heart problems.
-A patient's health could be graphed and historical trends could be useful in determining factors that contribute to the patient's condition.  
+A patient's health could be graphed and historical trends could be useful in determining factors that contribute to the patient's condition.
 It is often asserted that a person's environmental factors are better predictors for their health than their genetic makeup [^4].  Linking behavioral and social determinants with biomedical data would allow professionals to better target certain conditions. 
 
 ## 3. Choice of Data-sets
@@ -60,7 +61,7 @@ The analysis of relevant wearable data is undertaken to determine the accuracy o
 First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.
 During the data acquisition, the sensors are sampled at a 50hz rate.  Since the dataset is a timeseries, classification methods that take advantage of historical datapoints will be the most effective.
 The Keras Long Short Term Memory classifier implementation is used for this task.  The dataset is first split into its various classes of motion using the one-hot-encoded matrix to filter out each
-class.  Each class is then subdivided into one-second 'windows', each with 50 entries.  Each window is offset by 10 entries from the previous window.  
+class.  Each class is then subdivided into one-second 'windows', each with 50 entries.  Each window is offset by 10 entries from the previous window.
 
 The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
 features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a Google
@@ -74,7 +75,7 @@ Reviewing relevant literature is important to determine the current state of wea
 
 ## 5. Discussion
 
-The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  
+The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.
 
 There is an imbalance in the number of datapoints for each class, which could lead to classification errors.
 
@@ -108,19 +109,20 @@ Figure 2 is an example of the data's representation of a class of movement.  In 
 
 **Figure 7:** 10 second sensor readout of a female standing.
 
-Only roll, pitch, and yaw are shown for clarity and to illustrate the quality of the readings obtained by the sensors.  
+Only roll, pitch, and yaw are shown for clarity and to illustrate the quality of the readings obtained by the sensors.
 
 ![Figure 8](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/LSTM_benchmark.png)
 
 **Figure 8:** Cloudmesh benchmark for LSTM train and test.
 
-The final accuracy measurement for the LSTM was **%95.42**.  This proves that discrete movement classes can be determined through the analysis of basic sensor data regarding device movement.   
+The final accuracy measurement for the LSTM was **%95.42**.  This proves that discrete movement classes can be determined through the analysis of basic sensor data regarding device movement.
 
 ## 6. Conclusion
 
 
 ## 7. Acknowledgements 
-I would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications.   
+
+I would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications. 
 
 ## 8. References
 
