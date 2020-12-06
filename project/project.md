@@ -43,7 +43,7 @@ Furthermore, many users report diminished enthusiasm towards wearables due to co
 ensures that the impact of this study will not be confined to specific users and use cases.  Apple has released a suite of tools for interfacing with device sensors, and recently launched
 ResearchKit and CareKit, providing a framework for researchers and healthcare workers to collect and analyze user data [^1].  There are several apps available that utilize these tools, including
 Johns Hopkins' CorrieHealth app, which helps users manage their heart health care and shares data with their doctors.  This is an encouraging step towards streamlining the sharing of 
-wearable data between patients and healthcare professionals, as Apple provides standards for privacy, consent, and data quality.  
+wearable data between patients and healthcare professionals, as Apple provides standards for privacy, consent, and data quality.
 
 ### 2.2 Need for Wearable Data in Healthcare
 
@@ -130,17 +130,21 @@ Only roll, pitch, and yaw are shown for clarity and to illustrate the quality of
 
 **Figure 8:** Cloudmesh benchmark for LSTM train and test.
 
+![Figure 9](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/lstm_curves.png)
+
+**Figure 9** LSTM training and loss curves.
+
 The final accuracy measurement for the LSTM was **%95.42**.  This proves that discrete movement classes can be determined through the analysis of basic sensor data regarding device movement.
 
 ## 6. Conclusion
 
 ### 6.1 Results
 
-
+Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.  
 
 ## 7. Acknowledgements 
 
-The author would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications. 
+The author would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications throughout this course. 
 
 ## 8. References
 
