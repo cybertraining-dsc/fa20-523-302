@@ -4,17 +4,16 @@
 [![Status](https://github.com/cybertraining-dsc/fa20-523-302/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-302/actions)
 Status: in progress
 
-- [ ] The analysis does not tell how accurate it is
-- [ ] Is it possible to distinguish between sitting and eating and sitting and working?
-- [ ] Explain in more detail what you can do with the data after classification
-
 Adam Martin, [fa20-523-302](https://github.com/cybertraining-dsc/fa20-523-302), [Edit](https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md)
 
 {{% pageinfo %}}
 
 ## Abstract
 
-todo
+Wearable devices offer an abundant source of data on wearer activity and health metrics.  Smartphones and smartwatches have become increasingly
+ubiquitous, and provide high-quality motion sensor data.  This research attempts to classify movement types, including running, walking, sitting, standing, 
+and going up and down stairs, to establish the practicality of sharing this raw data with healthcare workers.  It also addresses the existing research regarding 
+the use of wearable data in clinical settings and discusses shortcomings in making this data available.
 
 Contents
 
