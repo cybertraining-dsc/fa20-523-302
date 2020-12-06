@@ -122,7 +122,7 @@ The final accuracy measurement for the LSTM was **%95.42**.  This proves that di
 
 ## 7. Acknowledgements 
 
-I would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications. 
+The author would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications. 
 
 ## 8. References
 
