@@ -40,7 +40,10 @@ This paper examines the roadblocks in making this information available to healt
 
 Existing research focuses on a wide variety of inputs [^2][^1].  Sensors including electrodes, chemical probes, microphones, optical detectors, and blood glucose sensors are referenced as devices used for gathering healthcare information.  This research will focus on data that can be gathered with a modern smartphone or smartwatch.  Most of the sensors described are not as ubiquitous as consumer items like FitBits or Apple Watches.
 Furthermore, many users report diminished enthusiasm towards wearables due to complex sensors and pairing processes [^6].  Focusing on devices that are already successful in the consumer market
-ensures that the impact of this study will not be confined to specific users and use cases.
+ensures that the impact of this study will not be confined to specific users and use cases.  Apple has released a suite of tools for interfacing with device sensors, and recently launched
+ResearchKit and CareKit, providing a framework for researchers and healthcare workers to collect and analyze user data [^1].  There are several apps available that utilize these tools, including
+Johns Hopkins' CorrieHealth app, which helps users manage their heart health care and shares data with their doctors.  This is an encouraging step towards streamlining the sharing of 
+wearable data between patients and healthcare professionals, as Apple provides standards for privacy, consent, and data quality.  
 
 ### 2.2 Need for Wearable Data in Healthcare
 
@@ -50,6 +53,7 @@ depression, and could predict future heart problems. A patient's health could be
 It is often asserted that a person's environmental factors are better predictors for their health than their genetic makeup [^4].  Linking behavioral and social determinants with biomedical data
 would allow professionals to better target certain conditions.
 
+
 ## 3. Choice of Dataset
 
 The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.
@@ -57,7 +61,7 @@ The dataset used for this project contains labeled movement data from wearable d
 A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, and acceleration was used to determine user states.  The dataset is labeled with six states (walking downstairs,
 walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion.  Many smartphones and wearables already offer comprehensive sleep tracking features, so sleep motion
 data will not be considered for this study.  The CrowdSense iOS application was used to record user movements.  Each sensor was configured to sample at 50hz, and each user was instructed to start the recording,
-and begin their assigned activity.  
+and begin their assigned activity.
 
 ## 4. Methodology and Code
 
@@ -130,6 +134,9 @@ The final accuracy measurement for the LSTM was **%95.42**.  This proves that di
 
 ## 6. Conclusion
 
+### 6.1 Results
+
+
 
 ## 7. Acknowledgements 
 
@@ -137,7 +144,7 @@ The author would like to thank Dr. Gregor von Laszewski for his invaluable feedb
 
 ## 8. References
 
-[^1]: Piwek L, Ellis DA, Andrews S, Joinson A. (2016, February 02).  I Retrieved November 11, 2020 from <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953>
+[^1]: Piwek L, Ellis DA, Andrews S, Joinson A. The Rise of Consumer Health Wearables: Promises and Barriers (2016, February 02).  I Retrieved November 11, 2020 from <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953>
 
 [^2]: Yetisen, Ali K. (2018, August 16).  I Retrieved November 15, 2020 from <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6541866/>
 
