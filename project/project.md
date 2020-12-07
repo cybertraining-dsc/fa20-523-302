@@ -53,7 +53,6 @@ depression, and could predict future heart problems. A patient's health could be
 It is often asserted that a person's environmental factors are better predictors for their health than their genetic makeup [^4].  Linking behavioral and social determinants with biomedical data
 would allow professionals to better target certain conditions.
 
-
 ## 3. Choice of Dataset
 
 The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.
@@ -96,7 +95,7 @@ Much of this research will be focused on determining the state of wearables in t
 
 ## 5. Discussion
 
-The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  
+The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.
 
 ### 5.1 Descriptive Analysis
 
@@ -148,10 +147,9 @@ The final accuracy measurement for the LSTM was **%95.42**.  This proves that di
 
 ### 6.1 Results
 
-Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.  Viewing previous analyses of
-similar datasets, it should also be possible to determine the gender of the user, and estimate their stride length, walking asymmetry, double support time, and more.  Viewing the benchmarks,
+Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.  Viewing the benchmarks,
 the inference time is rapid, taking only 3 seconds to validate results for the entire testing dataset.  This model could be distilled for a production environment, and the rapid inference speed
-would allow for faster analyses for end users.
+would allow for faster analyses for end users. 
 
 ### 6.2 Limitations
 
@@ -161,15 +159,21 @@ and rnns, in order to establish what classification strategy would be best suite
 information regarding a users daily habits, their gender, their location, and other sensitive data.
 
 Existing research highlights some of the issues with the adoption of wearable devices in healthcare.  Inconsistent reporting, usage, and data quality are the most common concerns [^1][^5].  Addressing
-these issues through an analysis of data quality and device usage could contribute towards the robustness of this study.  
+these issues through an analysis of data quality and device usage could contribute towards the robustness of this study.
 
 ### 6.3 Impact
+
+![Figure 10](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/service_prop.png)
+
+**Figure 10** Proposal for integration of wearables data with other data sources and healthcare portals.  
 
 Frameworks like Apple CareKit and Google Fit are emerging to address the increasing demand for health tracking applications.  There is a need for a more effective pipeline for sharing this information
 securely with doctors and researchers, and these frameworks are a step in the right direction.  Furthermore, this research can be applied towards finding correlations between a patient's condition and
 their activity history, or helping a patient reach certain goals towards their overall well-being.  Comprehensive movement history can be combined with device usage patterns, eating habit data, self-reported
 well-being data, and other relevant sources to establish a more holistic perspective of a patient's health.
-Giving users and healthcare workers access to an insights on the data that they generate every day will promote healthier habits, increase physician efficacy, and promote overall well-being.
+Giving users and healthcare workers access to an insights on the data that they generate every day can promote healthier habits, increase physician efficacy, and promote overall well-being.  The author proposes
+the idea of a centralized system for user data tracking.  This could support cross-platform devices, and tie into other fitness and well-being apps to provide a centralized and holistic view of a user's health.  
+A system of this nature could also tie in information from patient portals, including test results, checkup info, and prescription information.  
 
 ## 7. Acknowledgements 
 
