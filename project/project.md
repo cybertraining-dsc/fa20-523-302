@@ -155,7 +155,7 @@ would allow for faster analyses for end users.
 
 The classes of movement considered for this study were limited.  For more precise movements, or movement combinations, more data and a more complex model would be required.  For example;
 classifying the type of activity being done while a user is seated, if they are typing or eating.  Future research could involve a wider review of timeseries classifiers, including transformers
-and rnns, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with 
+and recurrent neural networks, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with 
 information regarding a users daily habits, their gender, their location, and other sensitive data.
 
 Existing research highlights some of the issues with the adoption of wearable devices in healthcare.  Inconsistent reporting, usage, and data quality are the most common concerns [^1][^5].  Addressing
@@ -165,15 +165,15 @@ these issues through an analysis of data quality and device usage could contribu
 
 ![Figure 10](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/service_prop.png)
 
-**Figure 10** Proposal for integration of wearables data with other data sources and healthcare portals.  
+**Figure 10** Proposal for integration of wearables data with other data sources and healthcare portals.
 
 Frameworks like Apple CareKit and Google Fit are emerging to address the increasing demand for health tracking applications.  There is a need for a more effective pipeline for sharing this information
 securely with doctors and researchers, and these frameworks are a step in the right direction.  Furthermore, this research can be applied towards finding correlations between a patient's condition and
 their activity history, or helping a patient reach certain goals towards their overall well-being.  Comprehensive movement history can be combined with device usage patterns, eating habit data, self-reported
 well-being data, and other relevant sources to establish a more holistic perspective of a patient's health.
 Giving users and healthcare workers access to an insights on the data that they generate every day can promote healthier habits, increase physician efficacy, and promote overall well-being.  The author proposes
-the idea of a centralized system for user data tracking.  This could support cross-platform devices, and tie into other fitness and well-being apps to provide a centralized and holistic view of a user's health.  
-A system of this nature could also tie in information from patient portals, including test results, checkup info, and prescription information.  
+the idea of a centralized system for user data tracking.  This could support cross-platform devices, and tie into other fitness and well-being apps to provide a centralized and holistic view of a user's health.
+A system of this nature could also tie in information from patient portals, including test results, checkup info, and prescription information.
 
 ## 7. Acknowledgements 
 
