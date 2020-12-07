@@ -59,7 +59,8 @@ would allow professionals to better target certain conditions.
 The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.
 
 A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, and acceleration was used to determine user states.  The dataset is labeled with six states (walking downstairs,
-walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion.  Many smartphones and wearables already offer comprehensive sleep tracking features, so sleep motion
+walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion. The attitude, gravity, and acceleration readings each have three components corresponding to each
+axis of freedom.  Many smartphones and wearables already offer comprehensive sleep tracking features, so sleep motion
 data will not be considered for this study.  The CrowdSense iOS application was used to record user movements.  Each sensor was configured to sample at 50hz, and each user was instructed to start the recording,
 and begin their assigned activity.
 
@@ -77,7 +78,14 @@ class.  Each class is then subdivided into one-second 'windows', each with 50 en
 
 The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
 features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a Google
-Colab instance and benchmarked.
+Colab instance and benchmarked.  The workflow consists of the following:
+
+- A Long Short Term Memory layer with the cell count matching the size of the input window (50)
+- A Dropout layer to minimize overfitting
+- A fully connected layer with relu activation to help learn the weights of the LSTM output
+- A fully connected output layer with a softmax activation to return the final classifications
+
+The model is trained in 15 epochs, and uses a batch size of 64 for each backpropagation.
 
 If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient's
 medical history.
@@ -88,7 +96,7 @@ Much of this research will be focused on determining the state of wearables in t
 
 ## 5. Discussion
 
-The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.
+The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  
 
 ### 5.1 Descriptive Analysis
 
@@ -148,7 +156,12 @@ would allow for faster analyses for end users.
 ### 6.2 Limitations
 
 The classes of movement considered for this study were limited.  For more precise movements, or movement combinations, more data and a more complex model would be required.  For example;
-classifying the type of activity being done while a user is seated, if they are typing or eating.
+classifying the type of activity being done while a user is seated, if they are typing or eating.  Future research could involve a wider review of timeseries classifiers, including transformers
+and rnns, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with 
+information regarding a users daily habits, their gender, their location, and other sensitive data.
+
+Existing research highlights some of the issues with the adoption of wearable devices in healthcare.  Inconsistent reporting, usage, and data quality are the most common concerns [^1][^5].  Addressing
+these issues through an analysis of data quality and device usage could contribute towards the robustness of this study.  
 
 ### 6.3 Impact
 
