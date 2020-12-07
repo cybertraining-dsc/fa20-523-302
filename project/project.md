@@ -21,7 +21,7 @@ Contents
 
 {{% /pageinfo %}}
 
-**Keywords:** Wearables, Classification, Descriptive Analysis, Healthcare, Movement Tracking, Precision Health
+**Keywords:** Wearables, Classification, Descriptive Analysis, Healthcare, Movement Tracking, Precision Health, LSTM
 
 ## 1. Introduction
 
