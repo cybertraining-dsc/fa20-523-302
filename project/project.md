@@ -73,11 +73,20 @@ and will proceed with attempts to classify the labeled data.
 First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.
 During the data acquisition, the sensors are sampled at a 50hz rate.  Since the dataset is a timeseries, classification methods that take advantage of historical datapoints will be the most effective.
 The Keras Long Short Term Memory classifier implementation is used for this task.  The dataset is first split into its various classes of motion using the one-hot-encoded matrix to filter out each
-class.  Each class is then subdivided into one-second 'windows', each with 50 entries.  Each window is offset by 10 entries from the previous window.
+class.  Each class is then subdivided into one-second 'windows', each with 50 entries.  Each window is offset by 10 entries from the previous window.  The use of windows allows the model to remain small
+in size, while still gathering enough information to make accurate classifications.  The hyperparameters that can be tuned include:
 
-The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
-features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a Google
-Colab instance and benchmarked.  The workflow consists of the following:
+- Window size (50)
+- Window offset (10)
+- LSTM size (50)
+- Dense layer size (50)
+- Batch size (64)
+- Epochs (15)
+- Dropout ratio (0.5)
+
+The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50) for the testing set.  The dimensions correspond to the number of windows, the number of movement
+features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a standard (non-gpu)
+Google Colab instance and benchmarked.  The workflow consists of the following:
 
 - A Long Short Term Memory layer with the cell count matching the size of the input window (50)
 - A Dropout layer to minimize overfitting
@@ -131,6 +140,8 @@ Only roll, pitch, and yaw are shown for clarity and to illustrate the quality of
 
 **Figure 7:** 10 second sensor readout of a female standing.
 
+Interestingly, initial classification attempts involving random forests and knn methods performed fairly well despite their inherent lack of awareness of historical data.
+
 ### 5.2 Results
 
 ![Figure 8](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/LSTM_benchmark.png)
@@ -155,7 +166,7 @@ would allow for faster analyses for end users.
 
 The classes of movement considered for this study were limited.  For more precise movements, or movement combinations, more data and a more complex model would be required.  For example;
 classifying the type of activity being done while a user is seated, if they are typing or eating.  Future research could involve a wider review of timeseries classifiers, including transformers
-and recurrent neural networks, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with 
+convolutional neural networks, and recurrent neural networks, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with 
 information regarding a users daily habits, their gender, their location, and other sensitive data.
 
 Existing research highlights some of the issues with the adoption of wearable devices in healthcare.  Inconsistent reporting, usage, and data quality are the most common concerns [^1][^5].  Addressing
