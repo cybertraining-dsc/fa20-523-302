@@ -143,20 +143,20 @@ The final accuracy measurement for the LSTM was **%95.42**.  This proves that di
 Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.  Viewing previous analyses of
 similar datasets, it should also be possible to determine the gender of the user, and estimate their stride length, walking asymmetry, double support time, and more.  Viewing the benchmarks,
 the inference time is rapid, taking only 3 seconds to validate results for the entire testing dataset.  This model could be distilled for a production environment, and the rapid inference speed
-would allow for faster analyses for end users.  
+would allow for faster analyses for end users.
 
 ### 6.2 Limitations
 
 The classes of movement considered for this study were limited.  For more precise movements, or movement combinations, more data and a more complex model would be required.  For example;
-classifying the type of activity being done while a user is seated, if they are typing or eating.  
+classifying the type of activity being done while a user is seated, if they are typing or eating.
 
 ### 6.3 Impact
 
 Frameworks like Apple CareKit and Google Fit are emerging to address the increasing demand for health tracking applications.  There is a need for a more effective pipeline for sharing this information
 securely with doctors and researchers, and these frameworks are a step in the right direction.  Furthermore, this research can be applied towards finding correlations between a patient's condition and
 their activity history, or helping a patient reach certain goals towards their overall well-being.  Comprehensive movement history can be combined with device usage patterns, eating habit data, self-reported
-well-being data, and other relevant sources to establish a more holistic perspective of a patient's health.  
-Giving users and healthcare workers access to an insights on the data that they generate every day will promote healthier habits, increase physician efficacy, and promote overall well-being.  
+well-being data, and other relevant sources to establish a more holistic perspective of a patient's health.
+Giving users and healthcare workers access to an insights on the data that they generate every day will promote healthier habits, increase physician efficacy, and promote overall well-being.
 
 ## 7. Acknowledgements 
 
