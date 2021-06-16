@@ -1,4 +1,14 @@
-# Review of the Use of Wearables in Personalized Medicine
+---
+date: 2021-03-15
+title: Review of the Use of Wearables in Personalized Medicine
+linkTitle: Wearables in Medicine
+tags: ["project", "ai", "health"]
+description: Review of the Use of Wearables in Personalized Medicine
+author: Adam Martin
+resources:
+- src: "**.{png,jpg}"
+  title: "Image #:counter"
+---
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-302/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-302/actions)
 [![Status](https://github.com/cybertraining-dsc/fa20-523-302/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-302/actions)
