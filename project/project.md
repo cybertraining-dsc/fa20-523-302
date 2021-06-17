@@ -111,7 +111,6 @@ medical history.
 
 Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.
 Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.
- 
 
 ## 5. Discussion
 
