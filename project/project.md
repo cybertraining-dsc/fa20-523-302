@@ -5,6 +5,7 @@ linkTitle: Wearables in Medicine
 tags: ["project", "ai", "health"]
 description: "Wearable devices offer an abundant source of data on wearer activity and health metrics.  Smartphones and smartwatches have become increasingly ubiquitous, and provide high-quality motion sensor data.  This research attempts to classify movement types, including running, walking, sitting, standing, and going up and down stairs, to establish the practicality of sharing this raw data with healthcare workers.  It also addresses the existing research regarding the use of wearable data in clinical settings and discusses shortcomings in making this data available."
 author: Adam Martin
+github_url: https://github.com/cybertraining-dsc/fa20-523-302/edit/main/project/project.md
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
